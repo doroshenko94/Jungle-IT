@@ -561,24 +561,6 @@ left: -10px;
 		<div class="bushes"></div>
   </div>
   
-  <div class="road-container">
-    
-      <div class="start-line"></div>
-      <div class="car conor-car" id="car5">
-        <div class="driver-info">
-          <div class="driver-name">MARIO</div>
-          <div class="driver-position">Position: 0%</div>
-        </div>
-      </div>
-      <div class="flag" id="flag5"></div>
-      <div class="flag-text" id="flag-text5">VICTORY!</div>
-	  <div class="road" id="road6">
-    </div>
-		<div class="bushes1"></div>
-  </div>
-  
-
-  
   </div>
 
 <script>
@@ -607,12 +589,7 @@ left: -10px;
       "name": "GIANNI",
       "roadLength": 25000,
       "position": 0
-    },
-	{
-      "name": "MARIO",
-      "roadLength": 10000,
-      "position": 0
-    },
+    }
   ];
   
   // Создайте массив сообщений поддержки для водителя TOM
@@ -703,15 +680,12 @@ driversData[2].position = 14901 / driversData[2].roadLength;
 driversData[3].position =  25610/ driversData[3].roadLength;
 // Обновляем позицию водителя Gianni
 driversData[4].position =  9352/ driversData[4].roadLength;
-// Обновляем позицию водителя Mario
-driversData[5].position =  0/ driversData[5].roadLength;
 
 moveCar(0); // Переместить автомобиль первого водителя
 moveCar(1); // Переместить автомобиль второго водителя
 moveCar(2); // Переместить автомобиль второго водителя
 moveCar(3); // Переместить автомобиль второго водителя
 moveCar(4); // Переместить автомобиль второго водителя
-moveCar(5); // Переместить автомобиль второго водителя
 
 
   function showVictory(driverIndex) {
